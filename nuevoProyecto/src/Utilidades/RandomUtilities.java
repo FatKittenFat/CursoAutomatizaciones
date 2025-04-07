@@ -1,4 +1,4 @@
-package Utilities;/*
+package Utilidades;/*
 Metodos:
     estructura:
         static tipoDatoRetorno nombreMetodo (tipoDato1 parametro 1, tipoDato2, parametro2,...tipoDaton parametron)
@@ -19,7 +19,7 @@ Metodos:
  */
 
 public class RandomUtilities {
-    static int generarRandomInt(int min, int max, java.util.Random random) {
+    public static int generarRandomInt(int min, int max, java.util.Random random) {
         return random.nextInt(max - min + 1) + min;
     }
 
