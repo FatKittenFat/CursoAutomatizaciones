@@ -18,6 +18,8 @@ Metodos:
         existen clases que no tienen main y solo metodos, se usan para llamarlos en otras clases
  */
 
+import java.util.Random;
+
 public class RandomUtilities {
     public static int generarRandomInt(int min, int max, java.util.Random random) {
         return random.nextInt(max - min + 1) + min;
@@ -62,5 +64,12 @@ public class RandomUtilities {
 
     static void imprimirAreaPerimetro(double radio, double area, double perimetro) {
         System.out.printf("%n %nPara un radio de %.3f se tiene un perimetro d %.3f y un area de %,3f", radio, perimetro, area);
+    }
+
+    public static int[] generarRandomArrayInt (int n, int min, int max, Random random) {
+        final var array = new int[n]; // declaracion de Array
+        for (var i = 0;  i < ; ++) {
+
+        }
     }
 }
