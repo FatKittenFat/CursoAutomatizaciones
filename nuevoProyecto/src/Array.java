@@ -1,3 +1,8 @@
+import Utilidades.RandomUtilities;
+
+import java.util.Arrays;
+import java.util.Random;
+
 /*
 Declaracion de array:
 - si se conocen los valores:
@@ -40,4 +45,35 @@ static tipoRetorno[] nombreMetodo () {
 }
  */
 public class Array {
+    public static void main(String[] args) {
+        final var random = new Random();
+        final var arrayInt = RandomUtilities.generarRandomArrayInt(10, 10, 100, random);
+        final var arrayDouble = RandomUtilities.generarRandomArrayDouble(5,10,30, random);
+
+        System.out.printf("el array int es: %s%n", Arrays.toString(arrayInt));
+        System.out.printf("el array double es: %s", Arrays.toString(arrayDouble));
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

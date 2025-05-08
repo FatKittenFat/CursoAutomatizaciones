@@ -68,8 +68,17 @@ public class RandomUtilities {
 
     public static int[] generarRandomArrayInt (int n, int min, int max, Random random) {
         final var array = new int[n]; // declaracion de Array
-        for (var i = 0;  i < ; ++) {
-
+        for (var i = 0;  i < n; i++) {
+            array[i] = generarRandomInt(min, max, random);
         }
+        return array;
+    }
+
+    public static double[] generarRandomArrayDouble (int n, int min, int max, Random random){
+        final var array = new double[n];
+        for (var i = 0; i < n ; i++) {
+            array[i] = generarRandomDouble(min, max, random);
+        }
+        return array;
     }
 }
