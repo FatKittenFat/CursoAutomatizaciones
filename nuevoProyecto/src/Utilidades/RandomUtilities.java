@@ -18,6 +18,8 @@ Metodos:
         existen clases que no tienen main y solo metodos, se usan para llamarlos en otras clases
  */
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class RandomUtilities {
@@ -80,5 +82,21 @@ public class RandomUtilities {
             array[i] = generarRandomDouble(min, max, random);
         }
         return array;
+    }
+
+    public static List<Integer> generarRandomIntLista(int n, int min, int max, Random random){
+        final var listaAleatoria = new ArrayList<Integer>();
+        for (int i = 0; i < n; i++) {
+            listaAleatoria.add(generarRandomInt(min, max, random));
+        }
+        return listaAleatoria;
+    }
+
+    public static List<Double> generarRandomDoubleLista (int n, int min, int max, Random random){
+        final var listaAleatoria = new ArrayList<Double>();
+        for (int i = 0; i < n; i++) {
+            listaAleatoria.add(generarRandomDouble(min, max, random));
+        }
+        return listaAleatoria;
     }
 }
